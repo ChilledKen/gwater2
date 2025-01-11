@@ -1,9 +1,40 @@
-VertexLitGeneric {
-	$basetexture "lights/white"
-	$color2 "[0.9 0.9 0.1]"
+"VertexlitGeneric"
+{
+	"$basetexture" "gwater2/water_gun/base"
+	"$bumpmap" "gwater2/water_gun/base_nm"
 
-	$phong 1
-	$phongboost 10
-	$phongexponent 200
-	$phongfresnelranges "[0.2 0.6 1]"
+        "$detail"  "gwater2/water_gun/base_ao"
+        "$detailblendfactor" "1"
+        "$detailtint" "{255 255 255}"
+        "$detailscale" 1
+
+	"$phong" 1
+	"$phongboost"	1
+	"$phongexponenttexture" "gwater2/water_gun/base_phong"
+	"$phongfresnelranges" "[1 1 1]"
+	"$rimlight" 1
+	"$rimlightboost" 0.5
+	"$envmapmask" "gwater2/water_gun/base_env"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.07 0.07 0.07]"
+	"$normalmapalphaenvmapmask" 1
+	"$phongfix" "{1 1 1}"
+	Proxies
+	{
+		Equals
+		{
+			srcVar1	$color
+			resultVar	$phongtint
+		}
+		Add
+		{
+			srcVar1 $phongfix
+			srcVar2 $phongtint
+			resultVar $phongtint
+		}
+	}
 }
+
+
+	// vmt and ao made by digger
+
