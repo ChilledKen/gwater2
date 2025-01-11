@@ -32,8 +32,8 @@ SWEP.Secondary.Delay = 0
 
 SWEP.ViewModelFlip		= false
 SWEP.ViewModelFOV		= 70
-SWEP.ViewModel			= "models/gwater2/water_gun.mdl" 
-SWEP.WorldModel			= "models/weapons/w_pistol.mdl"
+SWEP.ViewModel			= "models/gwater2/c_watergun.mdl" 
+SWEP.WorldModel			= "models/weapons/w_watergun.mdl"
 SWEP.UseHands           = true
 
 local cardinal = {
