@@ -35,7 +35,7 @@ Features include:
 	- Preset saving
 	- Language localization support
 - Custom SWEPs, including:
-	- Water gun, modeled by me
+	- Water gun, updated by chilledken and digger
 	- Part the seas, now you can roleplay as moses!
 	- Advanced water gun (courtesy of googer_)
 - Custom SENTs, including:
